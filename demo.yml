@@ -1,2 +1,6 @@
 prop:
   key: value11
+
+logging:
+  pattern:
+    level: ${LOG_LEVEL_PATTERN:-%5p} userId:%X{userId} tenantId:%X{tenantId} tenantGuid:%X{tenantGuid} registrationId:%X{registrationId}
