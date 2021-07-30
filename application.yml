@@ -10,6 +10,10 @@ foo: baz
 key: remote-app-yml-new
 id:
   values: 1,2,3,4,5,6,7,8,9,10,11,12
+
+logging:
+  pattern:
+    level: ${LOG_LEVEL_PATTERN:-%5p} userId:%X{userId} tenantId:%X{tenantId} tenantGuid:%X{tenantGuid} module:%X{x-onetrust-module}
 ---
 spring:
   profiles: cloud
