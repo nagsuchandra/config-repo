@@ -13,7 +13,7 @@ id:
 
 logging:
   pattern:
-    level: ${LOG_LEVEL_PATTERN:-%5p} userId:%X{userId} tenantId:%X{tenantId} tenantGuid:%X{tenantGuid} module:%X{x-onetrust-module}
+    level: ${LEVEL:-%5p} userId:%X{userId} tenantId:%X{tenantId} tenantGuid:%X{tenantGuid} module:%X{x-onetrust-module}
 ---
 spring:
   profiles: cloud
