@@ -3,7 +3,7 @@ prop:
 
 registrationId: 500
 
-LEVEL: %5p [${spring.zipkin.service.name:${spring.application.name:}},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}]
+LEVEL: ${spring.zipkin.service.name:${spring.application.name}}
 
 logging:
   pattern:
