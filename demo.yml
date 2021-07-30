@@ -1,7 +1,7 @@
 prop:
   key: value11
 
-registrationId: 100
+registrationId: 500
 
 logging:
   pattern:
